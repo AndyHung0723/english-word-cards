@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="title">
+    <h1>新增單字</h1>
+  </div>
+  <form>
+    <div class="new-card">
+      <mat-form-field appearance="fill">
+        <mat-label>單字</mat-label>
+        <input matInput id="word" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>翻譯</mat-label>
+        <input matInput id="wordTranslate" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>詞性</mat-label>
+        <mat-select id="partOfSpeech">
+          <mat-option value="生活">名詞</mat-option>
+          <mat-option value="職場">動詞</mat-option>
+          <mat-option value="職場">形容詞</mat-option>
+          <mat-option value="職場">副詞</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>例句</mat-label>
+        <input matInput id="example" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>單字表</mat-label>
+        <mat-select id="list">
+          <mat-option value="生活">生活</mat-option>
+          <mat-option value="職場">職場</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="action">
+      <button mat-raised-button color="primary">確定</button>
+      <button mat-raised-button>清空</button>
+      <button mat-raised-button color="warn">刪除</button>
+      <button mat-raised-button>返回</button>
+    </div>
+  </form>
+</div>
